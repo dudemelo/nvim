@@ -74,6 +74,17 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  dracula = {
+    config = { "\27LJ\2\2¨\1\0\0\4\0\t\0\0196\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\a\0005\3\b\0B\0\4\1K\0\1\0\1\0\1\abg\tnone\16NormalFloat\1\0\1\abg\tnone\vNormal\16nvim_set_hl\bapi\24colorscheme dracula\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/jf/.local/share/nvim/site/pack/packer/start/dracula",
+    url = "https://github.com/Mofiqul/dracula.nvim"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/jf/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/jf/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -92,6 +103,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: dracula
+time([[Config for dracula]], true)
+try_loadstring("\27LJ\2\2¨\1\0\0\4\0\t\0\0196\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\a\0005\3\b\0B\0\4\1K\0\1\0\1\0\1\abg\tnone\16NormalFloat\1\0\1\abg\tnone\vNormal\16nvim_set_hl\bapi\24colorscheme dracula\bcmd\bvim\0", "config", "dracula")
+time([[Config for dracula]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
