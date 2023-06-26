@@ -80,6 +80,11 @@ _G.packer_plugins = {
     path = "/home/jf/.local/share/nvim/site/pack/packer/start/dracula",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
+  harpoon = {
+    loaded = true,
+    path = "/home/jf/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/theprimeagen/harpoon"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/jf/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
