@@ -90,7 +90,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   dracula = {
-    config = { "\27LJ\2\2¨\1\0\0\4\0\t\0\0196\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\a\0005\3\b\0B\0\4\1K\0\1\0\1\0\1\abg\tnone\16NormalFloat\1\0\1\abg\tnone\vNormal\16nvim_set_hl\bapi\24colorscheme dracula\bcmd\bvim\0" },
+    config = { "\27LJ\2\2x\0\0\2\0\a\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\4\0009\0\5\0'\1\6\0B\0\2\1K\0\1\0\24colorscheme dracula\bcmd\bvim\1\0\1\19transparent_bg\2\nsetup\fdracula\frequire\0" },
     loaded = true,
     path = "/home/jf/.local/share/nvim/site/pack/packer/start/dracula",
     url = "https://github.com/Mofiqul/dracula.nvim"
@@ -155,7 +155,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: dracula
 time([[Config for dracula]], true)
-try_loadstring("\27LJ\2\2¨\1\0\0\4\0\t\0\0196\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\a\0005\3\b\0B\0\4\1K\0\1\0\1\0\1\abg\tnone\16NormalFloat\1\0\1\abg\tnone\vNormal\16nvim_set_hl\bapi\24colorscheme dracula\bcmd\bvim\0", "config", "dracula")
+try_loadstring("\27LJ\2\2x\0\0\2\0\a\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\4\0009\0\5\0'\1\6\0B\0\2\1K\0\1\0\24colorscheme dracula\bcmd\bvim\1\0\1\19transparent_bg\2\nsetup\fdracula\frequire\0", "config", "dracula")
 time([[Config for dracula]], false)
 
 _G._packer.inside_compile = false

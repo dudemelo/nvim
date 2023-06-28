@@ -14,12 +14,13 @@ return require('packer').startup(function(use)
 	use ({
 		'Mofiqul/dracula.nvim',
 		as = 'dracula',
-		config = function()
-			vim.cmd('colorscheme dracula')
-			vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
-			vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
-		end
-	})
+        config = function()
+            require('dracula').setup({
+                transparent_bg = true,
+            })
+            vim.cmd('colorscheme dracula')
+        end
+    })
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		run = function()
