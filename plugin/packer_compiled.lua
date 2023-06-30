@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/jf/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/jf/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   dracula = {
     config = { "\27LJ\2\2x\0\0\2\0\a\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\4\0009\0\5\0'\1\6\0B\0\2\1K\0\1\0\24colorscheme dracula\bcmd\bvim\1\0\1\19transparent_bg\2\nsetup\fdracula\frequire\0" },
     loaded = true,

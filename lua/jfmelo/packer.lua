@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
 	use('m4xshen/autoclose.nvim')
+	use('github/copilot.vim')
 
     use {
         'VonHeikemen/lsp-zero.nvim',
