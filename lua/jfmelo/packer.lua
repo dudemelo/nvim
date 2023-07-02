@@ -32,6 +32,7 @@ return require('packer').startup(function(use)
 	use('mbbill/undotree')
 	use('m4xshen/autoclose.nvim')
 	use('github/copilot.vim')
+	use('tpope/vim-fugitive')
 
     use {
         'VonHeikemen/lsp-zero.nvim',
