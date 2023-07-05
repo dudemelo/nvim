@@ -1,3 +1,2 @@
-require('jfmelo.remap')
-require('jfmelo.set')
-
+ require('jfmelo.set')
+ require('jfmelo.remap')
