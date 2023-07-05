@@ -41,6 +41,13 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set('n', '<C-h>', function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+vim.api.nvim_create_autocmd('BufWritePre', {
+  pattern = '*.go',
+  callback = function()
+    vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })
+  end
+})
+
 lsp.setup()
 
 vim.diagnostic.config({
