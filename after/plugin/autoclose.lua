@@ -1,4 +1,0 @@
-require('autoclose').setup({
-    keys = {}
-})
-
