@@ -29,10 +29,13 @@ return require('packer').startup(function(use)
 
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
-	use('m4xshen/autoclose.nvim')
 	use('github/copilot.vim')
 	use('tpope/vim-fugitive')
 	use('tpope/vim-sleuth')
+
+        use{'m4xshen/autoclose.nvim', config = function()
+            require('autoclose').setup({ keys = {} })
+        end}
 
     use {
         'VonHeikemen/lsp-zero.nvim',
