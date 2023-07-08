@@ -1,16 +1,16 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-	use 'wbthomason/packer.nvim'
+    use 'wbthomason/packer.nvim'
 
-	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.1',
-		requires = { {'nvim-lua/plenary.nvim'} }
-	}
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        requires = { { 'nvim-lua/plenary.nvim' } }
+    }
 
-	use ({
-		'Mofiqul/dracula.nvim',
-		as = 'dracula',
+    use({
+        'Mofiqul/dracula.nvim',
+        as = 'dracula',
         config = function()
             require('dracula').setup({
                 transparent_bg = true,
@@ -19,33 +19,33 @@ return require('packer').startup(function(use)
         end
     })
 
-	use {
-		'nvim-treesitter/nvim-treesitter',
-		run = function()
-			local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-			ts_update()
-		end,
-	}
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+    }
 
-	use('mbbill/undotree')
-	use('github/copilot.vim')
-	use('tpope/vim-fugitive')
-	use('tpope/vim-sleuth')
+    use('mbbill/undotree')
+    use('github/copilot.vim')
+    use('tpope/vim-fugitive')
+    use('tpope/vim-sleuth')
 
-        use{'m4xshen/autoclose.nvim', config = function()
-            require('autoclose').setup({ keys = {} })
-        end}
+    use { 'm4xshen/autoclose.nvim', config = function()
+        require('autoclose').setup({ keys = {} })
+    end }
 
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
         requires = {
-            {'neovim/nvim-lspconfig'},
-            { 'williamboman/mason.nvim', run = function() pcall(vim.cmd, 'MasonUpdate') end },
-            {'williamboman/mason-lspconfig.nvim'},
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'L3MON4D3/LuaSnip'},
+            { 'neovim/nvim-lspconfig' },
+            { 'williamboman/mason.nvim',          run = function() pcall(vim.cmd, 'MasonUpdate') end },
+            { 'williamboman/mason-lspconfig.nvim' },
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'L3MON4D3/LuaSnip' },
         }
     }
     use {
@@ -67,6 +67,4 @@ return require('packer').startup(function(use)
             require('Comment').setup()
         end
     }
-
 end)
-
