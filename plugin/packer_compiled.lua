@@ -107,11 +107,6 @@ _G.packer_plugins = {
     path = "/home/jf/.local/share/nvim/site/pack/packer/start/dracula",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
-  harpoon = {
-    loaded = true,
-    path = "/home/jf/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/theprimeagen/harpoon"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/jf/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -191,18 +186,18 @@ time([[Defining packer_plugins]], false)
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\0025\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
--- Config for: dracula
-time([[Config for dracula]], true)
-try_loadstring("\27LJ\2\2x\0\0\2\0\a\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\4\0009\0\5\0'\1\6\0B\0\2\1K\0\1\0\24colorscheme dracula\bcmd\bvim\1\0\1\19transparent_bg\2\nsetup\fdracula\frequire\0", "config", "dracula")
-time([[Config for dracula]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\2^\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\1K\0\1\0\foptions\1\0\0\1\0\1\18icons_enabled\1\nsetup\flualine\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
 -- Config for: autoclose.nvim
 time([[Config for autoclose.nvim]], true)
 try_loadstring("\27LJ\2\2K\0\0\3\0\5\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0004\2\0\0=\2\4\1B\0\2\1K\0\1\0\tkeys\1\0\0\nsetup\14autoclose\frequire\0", "config", "autoclose.nvim")
 time([[Config for autoclose.nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\2^\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\1K\0\1\0\foptions\1\0\0\1\0\1\18icons_enabled\1\nsetup\flualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
+-- Config for: dracula
+time([[Config for dracula]], true)
+try_loadstring("\27LJ\2\2x\0\0\2\0\a\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\0016\0\4\0009\0\5\0'\1\6\0B\0\2\1K\0\1\0\24colorscheme dracula\bcmd\bvim\1\0\1\19transparent_bg\2\nsetup\fdracula\frequire\0", "config", "dracula")
+time([[Config for dracula]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
