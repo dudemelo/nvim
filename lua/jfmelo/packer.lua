@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
         as = 'dracula',
         config = function()
             require('dracula').setup({
-                transparent_bg = true,
+                -- transparent_bg = true,
             })
             vim.cmd('colorscheme dracula')
         end
@@ -54,7 +54,7 @@ return require('packer').startup(function(use)
         config = function()
             require('lualine').setup({
                 options = {
-                    icons_enabled = false
+                    icons_enabled = false,
                 },
             })
         end
