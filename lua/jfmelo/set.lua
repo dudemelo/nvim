@@ -58,3 +58,6 @@ vim.o.breakindent = true
 -- ignore case when searching
 vim.o.ignorecase = true
 vim.o.smartcase = true
+
+-- disable mouse
+vim.o.mouse = ''
