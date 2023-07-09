@@ -1,1 +1,1 @@
-require("jfmelo")
+require 'jfmelo';
