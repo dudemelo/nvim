@@ -35,7 +35,7 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 -- distance between cursor and top/bottom
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 18
 
 -- allow @ in filenames 
 vim.opt.isfname:append('@-@')
